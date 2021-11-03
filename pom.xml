@@ -60,11 +60,11 @@
 		<snapshotRepository>
 			<id>nexus</id>
 			<!-- <url>http://34.72.104.220:8081/nexus/content/repositories/snapshots</url> -->
-			<url>http://34.69.103.139:8081/repository/maven-snapshots</url>
+			<url>http://34.93.123.131:8081//repository/maven-snapshots</url>
 		</snapshotRepository>
 		<repository>
 			<id>nexus</id>
-			<url>http://34.121.10.13:8081/nexus/content/repositories/releases</url>
+			<url>http://34.93.123.131:8081//nexus/content/repositories/releases</url>
 		</repository>
 	</distributionManagement>
 

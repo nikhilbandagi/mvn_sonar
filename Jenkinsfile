@@ -8,7 +8,7 @@ pipeline {
 
          steps {
 
-            git 'https://github.com/salagarsprabu/mediclaim.git'
+            git 'https://github.com/nikhilbandagi/mvn_sonar.git'
 
                         }
 

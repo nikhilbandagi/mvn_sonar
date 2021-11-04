@@ -8,41 +8,61 @@ pipeline {
 
          steps {
 
-            git 'https://github.com/nikhilbandagi/mvn_sonar.git'
+            git 'https://github.com/salagarsprabu/mediclaim.git'
 
                         }
 
             }
-           
-            
-            stage ('Build') {
+
+            stage('Build') {
 
                         steps {
 
-                                   sh '/opt/apache-maven-3.8.3/bin/mvn clean sonar:sonar -Dmaven.test.skip=true'
+                              //withSonarQubeEnv('sonar') {
+
+                                                sh '/opt/maven/bin/mvn clean verify sonar:sonar -Dmaven.test.skip=true'
+
+                                    //}
 
                         }
 
             }
 
-            stage('Artifact-Deployment') {
+            // seems some issue with quality gates in latest jenkins version so commented out
 
-         steps {
+            /*stage("Quality Gate") {
 
-            sh ' /usr/share/maven clean deploy -Dmaven.test.skip=true'
+            steps {
+
+              timeout(time: 2, unit: 'MINUTES') {
+
+                waitForQualityGate abortPipeline: true
+
+              }
 
             }
-            }
-            stage('Release') {
 
-         steps {
+          } */
 
-           sh 'export JENKINS_NODE_COOKIE=dontkillme ;nohup java -jar $WORKSPACE/target/*.jar &'
+            stage ('Deploy') {
+
+                        steps {
+
+                                    sh '/opt/maven/bin/mvn clean deploy -Dmaven.test.skip=true'
 
                         }
 
             }
 
+            stage ('Release') {
+
+                        steps {
+
+                                    sh 'export JENKINS_NODE_COOKIE=dontkillme ;nohup java -jar $WORKSPACE/target/*.jar &'
+
+                        }
+
+            }
 
 }
 

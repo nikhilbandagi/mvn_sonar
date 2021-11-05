@@ -10,7 +10,30 @@
 
 	<name>com.sonar.maven</name>
 	<url>http://maven.apache.org</url>
+	<servers>
+<server>
+<id>maven-releases</id>
+<username>admin</username>
+<password>adminsonatypenexus</password>
+</server>
+<server>
+<id>maven-snapshots</id>
+<username>admin</username>
+<password>adminsonatypenexus</password>
+</server>
+</servers>
 
+<mirrors>
+<mirror>
+<id>maven-central</id>
+<name>maven-central</name>
+<url>http://34.93.123.131:8081/repository/maven-central/</url>
+<mirrorof>*</mirrorof>
+</mirror>
+</mirrors>
+
+
+	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.7</maven.compiler.source>

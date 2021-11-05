@@ -4,4 +4,4 @@ LABEL description="copy the jar file"
 WORKDIR /opt
 COPY $WORKSPACE/target/*.jar /opt/
 ENTRYPOINT ["java", "-jar"]
-CMD ["com.sonar.maven-0.0.3-SNAPSHOT.jar"]
+CMD ["com.sonar.maven-0.0.1-SNAPSHOT.jar"]

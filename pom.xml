@@ -57,7 +57,7 @@
 		<snapshotRepository>
 			<id>nexus</id>
 			<name>maven-snapshots</name>
-			<url>http://34.131.239.31:8081//repository/sonar_test/</url>
+			<url>http://34.131.239.31:8081/repository/maven-snapshots/</url>
 		</snapshotRepository>
 		<repository>
 			<id>nexus</id>

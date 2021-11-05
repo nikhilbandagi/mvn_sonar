@@ -25,10 +25,10 @@
 		<sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
 		<sonar.language>java</sonar.language>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-                <sonar.host.url>http://34.93.123.131:9000</sonar.host.url>
-                <sonar.login>admin</sonar.login>
-                <sonar.password>sonarqube</sonar.password>
- 	       </properties>
+		<sonar.host.url>http://34.93.123.131:9000</sonar.host.url>
+		<sonar.login>admin</sonar.login>
+		<sonar.password>sonarqube</sonar.password>
+	</properties>
 
 	<dependencies>
 		<dependency>
@@ -68,8 +68,8 @@
 	</distributionManagement>
 
 	<build>
-      <plugins>
-		
+		<plugins>
+
 			<plugin>
 				<groupId>org.owasp</groupId>
 				<artifactId>dependency-check-maven</artifactId>
@@ -142,7 +142,7 @@
 				</executions>
 			</plugin>
 		</plugins>
-		
+
 	</build>
 	<reporting>
 		<plugins>

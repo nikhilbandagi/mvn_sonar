@@ -61,11 +61,11 @@
 		<snapshotRepository>
 			<id>maven-snapshots</id>
 			<!-- <url>http://34.72.104.220:8081/nexus/content/repositories/snapshots</url> -->
-			<url>http://34.93.123.131:8081/repository/sonar_test/</url>
+			<url>http://34.93.123.131:8081/repository/maven-snapshots/</url>
 		</snapshotRepository>
 		<repository>
 			<id>maven-releases</id>
-			<url>http://34.93.123.131:8081/nexus/content/repositories/snapshots/</url>
+			<url>http://34.93.123.131:8081/repository/maven-releases/</url>
 		</repository>
 	</distributionManagement>
 

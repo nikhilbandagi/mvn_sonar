@@ -8,7 +8,7 @@
 	<version>3.0</version>
 	<packaging>jar</packaging>
 
-	<name>com.sonar.maven_qualitycode</name>
+	<name>com.sonar.maven</name>
 	<url>http://maven.apache.org</url>
 
 	

@@ -5,10 +5,10 @@
 
 	<groupId>sonar_test</groupId>
 	<artifactId>com.sonar.maven</artifactId>
-	<version>2.5</version>
+	<version>3.0</version>
 	<packaging>jar</packaging>
 
-	<name>com.sonar.maven</name>
+	<name>com.sonar.maven_qualitycode</name>
 	<url>http://maven.apache.org</url>
 
 	
